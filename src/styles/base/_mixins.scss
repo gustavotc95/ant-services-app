@@ -1,0 +1,43 @@
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%),
+  $border-radius-thumb: 5px,
+  $border-radius-track: 0px
+) {
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius-thumb;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $border-radius-track;
+  }
+
+  // Para Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@mixin input-search-placeholder {
+  width: 100%;
+  font-family: $font-primary;
+  font-style: normal;
+  font-size: 0.9em;
+  color: $color-text-input;
+}
+
+@mixin input-search-icone {
+  color: $color-itn-input;
+  right: 1.5em;
+  position: absolute;
+  top: 0.25em;
+}

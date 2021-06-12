@@ -1,0 +1,60 @@
+.map-container-full-page {
+  .map-popup {
+    .leaflet-popup-tip-container {
+      left: 0;
+      margin-left: 20px;
+    }
+    .leaflet-popup-content {
+      width: pxtorem(280px) !important;
+      .prestador-infos {
+        &__nome {
+          color: #0089a5;
+          font-size: pxtorem(18px);
+          font-weight: 700;
+          margin-bottom: pxtorem(15px);
+        }
+        &__servicos {
+          margin-bottom: pxtorem(15px);
+          ul {
+            padding-left: pxtorem(20px);
+          }
+          .tipo-servico {
+            color: #021315;
+            &--title {
+              font-size: pxtorem(14px);
+              font-weight: 700;
+              margin-bottom: pxtorem(5px);
+            }
+          }
+        }
+        &__telefone {
+          width: 90%;
+          background-color: #25d366;
+          border-radius: 10px;
+          margin: pxtorem(15px) auto 0;
+          &:hover {
+            background-color: #075e54;
+          }
+          a {
+            display: flex;
+            width: 100%;
+            text-decoration: none;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            padding: pxtorem(10px);
+            span {
+              margin-left: pxtorem(10px);
+              font-size: pxtorem(14px);
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-map {
+  height: pxtorem(280px);
+}

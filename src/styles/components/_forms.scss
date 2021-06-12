@@ -1,0 +1,99 @@
+.page-form {
+  margin: pxtorem(35px) 0;
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  padding: pxtorem(70px) pxtorem(90px);
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.titulo-sessao {
+  margin-top: pxtorem(16px);
+  margin-bottom: pxtorem(18px);
+
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: pxtorem(16px);
+  line-height: pxtorem(16px);
+
+  color: $color-primary;
+}
+
+.input-error {
+  color: red;
+  font-size: pxtorem(10px);
+}
+
+.form-label {
+  display: block;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: pxtorem(14px);
+  line-height: pxtorem(16px);
+
+  margin-bottom: pxtorem(7px);
+}
+
+.label-opcional {
+  color: #bdbebd;
+  font-size: pxtorem(10px);
+}
+
+.form-input {
+  font-family: $font-primary;
+  width: 100%;
+  margin: 0;
+  padding: pxtorem(10px);
+  background: #ffffff;
+  border: 2px solid #dddddd;
+
+  &:focus {
+    border: 2px solid $color-primary;
+    outline: none;
+  }
+}
+
+.form-text-area {
+  font-family: $font-primary;
+  width: 100%;
+  margin: 0;
+  padding: pxtorem(10px);
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  line-height: 1.2;
+
+  &:focus {
+    border: 2px solid $color-primary;
+    outline: none;
+  }
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn.btn-primary.btn-save {
+  width: pxtorem(200px);
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: pxtorem(10px) 0;
+  font-weight: normal;
+  margin-top: pxtorem(35px);
+}

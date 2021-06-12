@@ -1,0 +1,32 @@
+@import './styles/components';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $font-base-size-px;
+  line-height: pxtorem(20px);
+  font-family: $font-primary;
+  background-color: #e5e5e5;
+
+  @media (max-width: 1365.98px) {
+    font-size: pxtorem(14px);
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: $font-base-size-px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+h1 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: pxtorem(34px);
+  line-height: pxtorem(45px);
+}

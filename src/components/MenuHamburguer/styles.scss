@@ -1,0 +1,36 @@
+@import '../../styles/global';
+
+.menu-hamburguer {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 100%;
+    height: pxtorem(4px);
+    background-color: #333;
+    margin: pxtorem(4px) 0;
+    transition: 0.3s;
+    position: relative;
+    top: 0;
+  }
+
+  &.open {
+    .bar1 {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: pxtorem(8px);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: pxtorem(-8px);
+    }
+  }
+}

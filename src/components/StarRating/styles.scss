@@ -1,0 +1,36 @@
+@import '../../styles/global';
+
+// style the active path
+.stars-box .active svg path {
+  fill: #ffbb00;
+  stroke: darken(#ffbb00, 10%);
+}
+
+.star-rating {
+  .radio-stars {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    width: pxtorem(35px);
+    text-align: center;
+    cursor: pointer;
+    svg {
+      width: 100%;
+      height: auto;
+      fill: white;
+      stroke: #333;
+      transform: scale(0.8);
+      transition: transform 200ms ease-in-out;
+      path {
+        transition: fill 200ms ease-in-out, stroke 100ms ease-in-out;
+      }
+    }
+  }
+
+  label[for='star-null'] {
+    display: block;
+    margin: 0 auto;
+    color: #999;
+  }
+}
