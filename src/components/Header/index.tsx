@@ -13,7 +13,7 @@ export default function Header() {
       <header className="page-header">
         <div className="container">
           <div className="page-header__logo">
-            <Link to="/">
+            <Link to="/prestadores/criar">
               <img
                 className="page-header__logo-img"
                 src={Logo}
