@@ -2,6 +2,7 @@ import API from './api';
 
 import {IPrestador, INovoPrestador} from '../../models/prestador-model';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const cadastrarPrestador = async (prestador: INovoPrestador | any) => {
   return (
     await API.post<INovoPrestador>('/prestadores', prestador, {

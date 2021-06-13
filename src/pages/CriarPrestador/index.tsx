@@ -17,7 +17,6 @@ import {ICidade, ILocalizacao} from '../../models/cidade-model';
 
 // import cpfcnpjMask from '../../../utils/masks/cpfcnpjMask';
 import cepMask from '../../utils/masks/cepMask';
-import onlyTexUpperCasetMask from '../../utils/masks/onlyTexUpperCasetMask';
 import phoneMask from '../../utils/masks/phoneMask';
 
 export default function CriarPrestador() {
